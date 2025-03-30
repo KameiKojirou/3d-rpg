@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bo8fodqs8rnth"
 path.s3tc="res://.godot/imported/Battleaxe_castle-colour-palette.png-6e1de3132f5aa015a257cc68249710ef.s3tc.ctex"
+path.etc2="res://.godot/imported/Battleaxe_castle-colour-palette.png-6e1de3132f5aa015a257cc68249710ef.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/3D_Assets/Character/Gear/Battleaxe_castle-colour-palette.png"
-dest_files=["res://.godot/imported/Battleaxe_castle-colour-palette.png-6e1de3132f5aa015a257cc68249710ef.s3tc.ctex"]
+dest_files=["res://.godot/imported/Battleaxe_castle-colour-palette.png-6e1de3132f5aa015a257cc68249710ef.s3tc.ctex", "res://.godot/imported/Battleaxe_castle-colour-palette.png-6e1de3132f5aa015a257cc68249710ef.etc2.ctex"]
 
 [params]
 

@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://chysp5xjrca0s"
 path.s3tc="res://.godot/imported/Path_Gravel_Env_01_castle-colour-palette.png-a0d23ca4d521d35ffe784711ef7cacc3.s3tc.ctex"
+path.etc2="res://.godot/imported/Path_Gravel_Env_01_castle-colour-palette.png-a0d23ca4d521d35ffe784711ef7cacc3.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/3D_Assets/Environment/Path_Gravel_Env_01_castle-colour-palette.png"
-dest_files=["res://.godot/imported/Path_Gravel_Env_01_castle-colour-palette.png-a0d23ca4d521d35ffe784711ef7cacc3.s3tc.ctex"]
+dest_files=["res://.godot/imported/Path_Gravel_Env_01_castle-colour-palette.png-a0d23ca4d521d35ffe784711ef7cacc3.s3tc.ctex", "res://.godot/imported/Path_Gravel_Env_01_castle-colour-palette.png-a0d23ca4d521d35ffe784711ef7cacc3.etc2.ctex"]
 
 [params]
 

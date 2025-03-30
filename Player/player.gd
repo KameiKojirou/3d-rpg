@@ -12,6 +12,7 @@ var _look := Vector2.ZERO
 @export var mouse_sensitivity: float = 0.00075
 @onready var horizontal_pivot: Node3D = $HorizontalPivot
 @onready var vertical_pivot: Node3D = $HorizontalPivot/VerticalPivot
+@onready var rig_pivot: Node3D = $RigPivot
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -34,6 +35,7 @@ func _physics_process(delta: float) -> void:
 	if direction:
 		velocity.x = direction.x * SPEED
 		velocity.z = direction.z * SPEED
+		look_toward_direction(direction, delta)
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
@@ -63,3 +65,10 @@ func frame_camera_rotation() -> void:
 	)
 	$SmoothCameraArm.global_transform = vertical_pivot.global_transform
 	_look = Vector2.ZERO
+
+func look_toward_direction(direction: Vector3, delta: float) -> void:
+	var target_transform := rig_pivot.global_transform.looking_at(
+		rig_pivot.global_position + direction, Vector3.UP, true
+	)
+	rig_pivot.global_transform.basis = target_transform.basis
+	print(delta)
