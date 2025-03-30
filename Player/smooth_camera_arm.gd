@@ -5,5 +5,6 @@ extends SpringArm3D
 
 func _process(delta: float) -> void:
     global_transform = global_transform.interpolate_with(
-        target.global_transform, 1.0 - exp(-decay * delta)
+        target.global_transform,
+        1.0 - exp(-decay * delta)
     )
