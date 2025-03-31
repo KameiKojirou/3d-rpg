@@ -7,12 +7,11 @@ const JUMP_VELOCITY = 4.5
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 # this stores the x and y the player looks
 var _look := Vector2.ZERO
-
 @export var min_boundary: float = -60
 @export var max_boundary: float = 10
 @export var animation_decay: float = 20.0
-
 @export var mouse_sensitivity: float = 0.00075
+
 @onready var horizontal_pivot: Node3D = $HorizontalPivot
 @onready var vertical_pivot: Node3D = $HorizontalPivot/VerticalPivot
 @onready var rig_pivot: Node3D = $RigPivot
