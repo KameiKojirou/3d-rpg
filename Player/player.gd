@@ -77,4 +77,3 @@ func look_toward_direction(direction: Vector3, delta: float) -> void:
 		target_transform,
 		1.0 - exp(-animation_decay * delta)
 	)
-	print(delta)
