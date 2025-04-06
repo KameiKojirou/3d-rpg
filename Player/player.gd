@@ -22,34 +22,27 @@ var _attack_direction := Vector3.ZERO
 @onready var horizontal_pivot: Node3D = $HorizontalPivot
 @onready var vertical_pivot: Node3D = $HorizontalPivot/VerticalPivot
 @onready var rig_pivot: Node3D = $RigPivot
+@onready var attack_cast: RayCast3D = %AttackCast
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _physics_process(delta: float) -> void:
 	frame_camera_rotation()
-	# Add the gravity.
-	if not is_on_floor():
-		velocity += get_gravity() * delta
 
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	# var input_dir := Input.get_vector("move_left", "move_right", "move_forward", "move_back")
 	# var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+
 	var direction := get_movement_direction()
 	rig.update_animation_tree(direction)
-	if direction:
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
-		look_toward_direction(direction, delta)
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.z = move_toward(velocity.z, 0, SPEED)
+	handle_idle_physics_frame(delta, direction)
 	handle_slashing_physics_frame(delta)
+	# Add the gravity.
+	if not is_on_floor():
+		velocity += get_gravity() * delta
 	move_and_slide()
 
 
@@ -94,11 +87,23 @@ func slash_attack() -> void:
 	_attack_direction = get_movement_direction()
 	if _attack_direction.is_zero_approx():
 		_attack_direction = rig_pivot.global_basis * Vector3(0, 0, 1)
+	attack_cast.clear_exceptions()
+
+func handle_idle_physics_frame(delta: float, direction: Vector3) -> void:
+	if not rig.is_idle():
+		return
+	if direction:
+		velocity.x = direction.x * SPEED
+		velocity.z = direction.z * SPEED
+		look_toward_direction(direction, delta)
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 func handle_slashing_physics_frame(delta: float) -> void:
 	if not rig.is_slashing():
 		return
-
 	velocity.x = _attack_direction.x * attack_move_speed
 	velocity.z = _attack_direction.z * attack_move_speed
 	look_toward_direction(_attack_direction, delta)
+	attack_cast.deal_damage()
