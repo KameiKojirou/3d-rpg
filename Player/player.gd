@@ -25,6 +25,7 @@ var _attack_direction := Vector3.ZERO
 @onready var attack_cast: RayCast3D = %AttackCast
 @onready var health_component: HealthComponent = $HealthComponent
 @onready var collision_shape_3d: CollisionShape3D = $CollisionShape3D
+@onready var area_attack: ShapeCast3D = $RigPivot/AreaAttack
 
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -32,17 +33,11 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	frame_camera_rotation()
-
-
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	# var input_dir := Input.get_vector("move_left", "move_right", "move_forward", "move_back")
-	# var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-
 	var direction := get_movement_direction()
 	rig.update_animation_tree(direction)
 	handle_idle_physics_frame(delta, direction)
 	handle_slashing_physics_frame(delta)
+	handle_overhead_physics_frame()
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -58,6 +53,8 @@ func _unhandled_input(event: InputEvent) -> void:
 	if rig.is_idle():
 		if event.is_action_pressed("click"):
 			slash_attack()
+		if event.is_action_pressed("right_click"):
+			rig.travel("Overhead")
 
 func get_movement_direction() -> Vector3:
 	var input_dir := Input.get_vector("move_left", "move_right", "move_forward", "move_back")
@@ -111,8 +108,17 @@ func handle_slashing_physics_frame(delta: float) -> void:
 	look_toward_direction(_attack_direction, delta)
 	attack_cast.deal_damage()
 
+func handle_overhead_physics_frame() -> void:
+	if not rig.is_overhead():
+		return
+	velocity.x = 0.0
+	velocity.z = 0.0
 
 func _on_health_component_defeat() -> void:
 	rig.travel("Defeat")
 	collision_shape_3d.disabled = true
 	set_physics_process(false)
+
+
+func _on_rig_heavy_attack() -> void:
+	area_attack.deal_damage(50.0)
