@@ -14,6 +14,9 @@ func _unhandled_input(event: InputEvent) -> void:
     if not timer.is_stopped():
         return
 
+    if not player.is_physics_processing():
+        return
+
     if event.is_action_pressed("dash"):
         direction = player.get_movement_direction()
         if not direction.is_zero_approx():

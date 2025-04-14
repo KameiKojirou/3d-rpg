@@ -38,10 +38,12 @@ func is_slashing() -> bool:
     return playback.get_current_node() == "Slash"
 
 func is_overhead() -> bool:
-    return playback.get_current_node() == "Overhead"
+    return playback.get_current_node() in ["Overhead", "OverheadRecover"]
 
 func is_dashing() -> bool:
     return playback.get_current_node() == "Dash"
+
+
 
 func set_active_mesh(active_mesh: MeshInstance3D) -> void:
     for child in skeleton_3d.get_children():
