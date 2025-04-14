@@ -44,13 +44,12 @@ func is_dashing() -> bool:
     return playback.get_current_node() == "Dash"
 
 
-
 func set_active_mesh(active_mesh: MeshInstance3D) -> void:
     for child in skeleton_3d.get_children():
         child.visible = false
 
     active_mesh.visible = true
 
-func _on_animation_tree_animation_finished(anim_name:StringName) -> void:
+func _on_animation_tree_animation_finished(anim_name: StringName) -> void:
     if anim_name == "Overhead":
         heavy_attack.emit()
