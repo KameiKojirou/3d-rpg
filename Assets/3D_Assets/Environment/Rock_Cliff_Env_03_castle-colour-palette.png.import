@@ -2,11 +2,10 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1iy3ek5lqwgi"
+uid="uid://dvloxlo2qh63h"
 path.s3tc="res://.godot/imported/Rock_Cliff_Env_03_castle-colour-palette.png-022ccc865814a46c24f44ca10f411580.s3tc.ctex"
-path.etc2="res://.godot/imported/Rock_Cliff_Env_03_castle-colour-palette.png-022ccc865814a46c24f44ca10f411580.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/3D_Assets/Environment/Rock_Cliff_Env_03_castle-colour-palette.png"
-dest_files=["res://.godot/imported/Rock_Cliff_Env_03_castle-colour-palette.png-022ccc865814a46c24f44ca10f411580.s3tc.ctex", "res://.godot/imported/Rock_Cliff_Env_03_castle-colour-palette.png-022ccc865814a46c24f44ca10f411580.etc2.ctex"]
+dest_files=["res://.godot/imported/Rock_Cliff_Env_03_castle-colour-palette.png-022ccc865814a46c24f44ca10f411580.s3tc.ctex"]
 
 [params]
 

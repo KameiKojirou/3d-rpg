@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://iq1bjvuvvc28"
+uid="uid://bigtb80mfwy7"
 path="res://.godot/imported/Bush_Vege_2.glb-a943cb75168220c39a36c8c677af8cd7.scn"
 
 [deps]
@@ -35,7 +35,8 @@ import_script/path=""
 _subresources={
 "nodes": {
 "PATH:Bush_Vege_2": {
-"generate/physics": true
+"generate/physics": true,
+"physics/shape_type": 1
 }
 }
 }

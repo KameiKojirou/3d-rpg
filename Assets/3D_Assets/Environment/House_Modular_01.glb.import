@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cj4gbbhm8laub"
+uid="uid://d2ndmxhr4i1c2"
 path="res://.godot/imported/House_Modular_01.glb-54144ace80a47b100a5191227b12675a.scn"
 
 [deps]
@@ -32,6 +32,12 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={}
+_subresources={
+"nodes": {
+"PATH:House_Modular_01": {
+"generate/physics": true
+}
+}
+}
 gltf/naming_version=1
 gltf/embedded_image_handling=1

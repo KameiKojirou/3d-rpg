@@ -1,0 +1,7 @@
+res://Levels/level.tscn::e79feb9afe2bbdb75a324c40721bd229::1744656019::res://.godot/exported/133200997/export-aa8524b3965874fe19b6f51335dfb48f-level.scn
+res://Player/player.tscn::90464729b7fe82c07cfa647e48f1fdc0::1744656019::res://.godot/exported/133200997/export-d267b47f7e81a3258979164d56d0d9c2-player.scn
+res://Player/rig.tscn::cf8afb8fd43466418bf6415949263b9d::1744656019::res://.godot/exported/133200997/export-bc221990f7baca91fa9a83fc6e001df6-rig.scn
+res://Enemy/enemy.tscn::a7a665a6fa3bae0e6eb53e5c216df349::1744656019::res://.godot/exported/133200997/export-fd710a71c2d2ebe52136e62dc9922fbe-enemy.scn
+res://Player/health_component.tscn::b2f83fdc9f84e322571b5e686375321c::1744656019::res://.godot/exported/133200997/export-f4519ebcd2d0c679ad3c27aa7e4d7d61-health_component.scn
+res://Player/area_attack.tscn::4a7884d5fe9c768452033bf1c00b385c::1744656019::res://.godot/exported/133200997/export-5babda75ff3620768a4f98675f11c56c-area_attack.scn
+res://Player/dash.tscn::e55b2d4e64a207adf78b2b0c5f87e68d::1744656019::res://.godot/exported/133200997/export-14cc904c4218e2fc361ff92d387f4346-dash.scn

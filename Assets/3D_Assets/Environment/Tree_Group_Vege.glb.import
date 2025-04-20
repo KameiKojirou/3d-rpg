@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bvxbavavkh8fq"
+uid="uid://cvuwq71aoiiqi"
 path="res://.godot/imported/Tree_Group_Vege.glb-0f1bb85f26a152ec83808ded39db1fdb.scn"
 
 [deps]
@@ -35,7 +35,8 @@ import_script/path=""
 _subresources={
 "nodes": {
 "PATH:Tree_Group_Vege": {
-"generate/physics": true
+"generate/physics": true,
+"physics/shape_type": 2
 }
 }
 }

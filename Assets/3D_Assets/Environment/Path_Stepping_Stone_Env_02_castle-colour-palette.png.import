@@ -2,11 +2,10 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wxippsxawylr"
+uid="uid://bfol31nghvs67"
 path.s3tc="res://.godot/imported/Path_Stepping_Stone_Env_02_castle-colour-palette.png-18bd764c3b89d4814fd1ad25911c6b46.s3tc.ctex"
-path.etc2="res://.godot/imported/Path_Stepping_Stone_Env_02_castle-colour-palette.png-18bd764c3b89d4814fd1ad25911c6b46.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/3D_Assets/Environment/Path_Stepping_Stone_Env_02_castle-colour-palette.png"
-dest_files=["res://.godot/imported/Path_Stepping_Stone_Env_02_castle-colour-palette.png-18bd764c3b89d4814fd1ad25911c6b46.s3tc.ctex", "res://.godot/imported/Path_Stepping_Stone_Env_02_castle-colour-palette.png-18bd764c3b89d4814fd1ad25911c6b46.etc2.ctex"]
+dest_files=["res://.godot/imported/Path_Stepping_Stone_Env_02_castle-colour-palette.png-18bd764c3b89d4814fd1ad25911c6b46.s3tc.ctex"]
 
 [params]
 

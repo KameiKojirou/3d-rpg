@@ -1,0 +1,15 @@
+GPUParticles3D
+Timer
+ShapeCast3D
+Node
+Node3D
+CollisionShape3D
+CharacterBody3D
+RayCast3D
+BoneAttachment3D
+AnimationTree
+AnimationPlayer
+CSGBox3D
+SpringArm3D
+Camera3D
+MeshInstance3D

@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://be85idcfphkyc"
+uid="uid://qvjnokgn4xc"
 path="res://.godot/imported/Fire_Pit_Env.glb-4abd9bd10f0ac2f0af885e1d0b83e1ed.scn"
 
 [deps]
@@ -32,6 +32,16 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={}
+_subresources={
+"nodes": {
+"PATH:Fire_Pit_Env": {
+"generate/physics": true,
+"physics/shape_type": 5,
+"primitive/height": 1.5,
+"primitive/position": Vector3(0, 0.8, 0),
+"primitive/radius": 2.0
+}
+}
+}
 gltf/naming_version=1
 gltf/embedded_image_handling=1

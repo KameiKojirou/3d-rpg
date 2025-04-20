@@ -2,11 +2,10 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dnw81e4lp6crm"
+uid="uid://m0e4qm56ymk4"
 path.s3tc="res://.godot/imported/Longsword_castle-colour-palette.png-88e43fbd96c1515bada27eab7f35e753.s3tc.ctex"
-path.etc2="res://.godot/imported/Longsword_castle-colour-palette.png-88e43fbd96c1515bada27eab7f35e753.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/3D_Assets/Character/Gear/Longsword_castle-colour-palette.png"
-dest_files=["res://.godot/imported/Longsword_castle-colour-palette.png-88e43fbd96c1515bada27eab7f35e753.s3tc.ctex", "res://.godot/imported/Longsword_castle-colour-palette.png-88e43fbd96c1515bada27eab7f35e753.etc2.ctex"]
+dest_files=["res://.godot/imported/Longsword_castle-colour-palette.png-88e43fbd96c1515bada27eab7f35e753.s3tc.ctex"]
 
 [params]
 

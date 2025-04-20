@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://b21rj7g65qjis"]
+
+[ext_resource type="PackedScene" uid="uid://qktpin47np13" path="res://UserInterface/item_icon.tscn" id="1_ye53a"]
+[ext_resource type="Script" uid="uid://c3wg01yfk6vdt" path="res://UserInterface/currency_icon.gd" id="2_cs3bi"]
+[ext_resource type="Texture2D" uid="uid://bg8fqyffyairr" path="res://Assets/UIAssets/Icons/star_icon.png" id="2_w3oqi"]
+
+[node name="CurrencyIcon" instance=ExtResource("1_ye53a")]
+script = ExtResource("2_cs3bi")
+value = 53
+
+[node name="TypeIcon" parent="." index="0"]
+texture = ExtResource("2_w3oqi")
+
+[node name="ItemLabel" parent="MarginContainer" index="1"]
+text = "Gold"

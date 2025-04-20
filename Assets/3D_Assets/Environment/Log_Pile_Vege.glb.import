@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://beixbevxpnjs0"
+uid="uid://d3d5sibp3wxey"
 path="res://.godot/imported/Log_Pile_Vege.glb-6368c2f9cc8547d30f94533cb7d82086.scn"
 
 [deps]
@@ -32,6 +32,12 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={}
+_subresources={
+"nodes": {
+"PATH:Log_Pile_Vege": {
+"generate/physics": true
+}
+}
+}
 gltf/naming_version=1
 gltf/embedded_image_handling=1

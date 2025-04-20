@@ -2,11 +2,10 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://caa0vip0q7k0u"
+uid="uid://b7e4ttpu4xxya"
 path.s3tc="res://.godot/imported/Tall_Shield_castle-colour-palette.png-f1d2c39ba07242902b7b287451e23f61.s3tc.ctex"
-path.etc2="res://.godot/imported/Tall_Shield_castle-colour-palette.png-f1d2c39ba07242902b7b287451e23f61.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -16,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/3D_Assets/Character/Gear/Tall_Shield_castle-colour-palette.png"
-dest_files=["res://.godot/imported/Tall_Shield_castle-colour-palette.png-f1d2c39ba07242902b7b287451e23f61.s3tc.ctex", "res://.godot/imported/Tall_Shield_castle-colour-palette.png-f1d2c39ba07242902b7b287451e23f61.etc2.ctex"]
+dest_files=["res://.godot/imported/Tall_Shield_castle-colour-palette.png-f1d2c39ba07242902b7b287451e23f61.s3tc.ctex"]
 
 [params]
 

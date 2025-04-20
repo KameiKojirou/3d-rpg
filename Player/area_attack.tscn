@@ -1,11 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://deal8jepga326"]
+[gd_scene load_steps=3 format=3 uid="uid://c50ttih3nt4d4"]
 
-[ext_resource type="Script" uid="uid://c1au4yap30sp5" path="res://Player/area_attack.gd" id="1_euxcq"]
+[ext_resource type="Script" uid="uid://c63ehactw3wgv" path="res://Player/area_attack.gd" id="1_tfgbg"]
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_g3gle"]
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_f72tm"]
 radius = 1.0
 
 [node name="AreaAttack" type="ShapeCast3D"]
-shape = SubResource("CylinderShape3D_g3gle")
+shape = SubResource("CylinderShape3D_f72tm")
 target_position = Vector3(0, 0, 0)
-script = ExtResource("1_euxcq")
+script = ExtResource("1_tfgbg")
